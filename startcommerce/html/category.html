@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+   <title>Shop-category</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css" />
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu:500italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+   <script type="text/javascript" src="js/jquery.autocolumnlist.js"></script>
+   <script type="text/javascript" src="js/jquery.infinitecarousel.js"></script>
+   <script type="text/javascript" src="js/theme.js" ></script>
+ </head>
+ <body>
+	<div id="container">
+        <div id="header">
+            <div id="corner"></div>
+            <div id="logo">
+                <a href="#"><img src="img/logo.png" alt="" /></a>
+                <h1 id="shop-name">StartCommerce</h1>
+                <em id="shop-desc">try making something new <br /> entertainment shopping</em>
+            </div><!-- End Logo -->
+            
+            <div id="shop-services">
+                <a href="#" class="wishlist-link">Wishlist</a>
+                <a href="#" class="compare-link">Compare</a>
+                
+                <div class="cart-mini">
+                    <a href="#" class="cart-link">Cart</a>
+                    <div class="cart-mini-state">
+                        | 3 items - $2150.00
+                    </div>
+                </div>
+            </div>
+            
+            <div id="shop-controls">
+                <div id="language-list">
+                    <ul id="language">
+                        <li class="current-list-item english-lang">English</li>
+                        <li class="english-lang"><a href="#">English</a></li>
+                        <li class="russian-lang"><a href="#">Russian</a></li>
+                    </ul>
+                </div>
+                <div id="currency-list">
+                    <ul id="currency">
+                        <li class="current-list-item dollar">US Dollar</li>
+                        <li class="dollar"><a href="#">US Dollar</a></li>
+                        <li class="yen"><a href="#">Japanese Yen</a></li>
+                        <li class="euro"><a href="#">Euro</a></li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <form method="get" id="searchform" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <input type="text" value="" name="s" id="s" placeholder="Search here" />
+                        <input type="submit" id="searchsubmit" value="" />
+                    </form>
+                </div>
+                
+                <div id="user" class="logged">
+                    <p>Welcome <a href="#">AnnaLitvinchuk</a>! <a href="#" class="signout">Sign out</a></p>
+                </div>
+            </div>
+            
+        </div><!-- End Header -->
+        
+        <div class="clear"></div>
+        
+        <div id="main-menu">
+            <ul>
+            	<li><a href="#">Fashion</a></li>
+            	<li><a href="#">Motors</a></li>
+            	<li><a href="#">Electronics</a>
+                    <ul class="sub-menu">
+                    	<li><a href="#">Cameras & Photo</a></li>
+                    	<li><a href="#">Cell Phones & PDAs</a></li>
+                    	<li><a href="#">Computers & Networking</a></li>
+                    	<li><a href="#">More Electronics</a></li>
+                    	<li><a href="#">TV, Video & Audio</a></li>
+                    	<li><a href="#">Video Games</a></li>
+                    	<li><a href="#">Cameras & Photo</a></li>
+                    	<li><a href="#">Cell Phones & PDAs</a></li>
+                    	<li><a href="#">Computers & Networking</a>
+                            <ul class="sub-menu">
+                            	<li><a href="#">Cameras & Photo</a></li>
+                            	<li><a href="#">Cell Phones & PDAs</a></li>
+                            	<li><a href="#">Computers & Networking</a></li>
+                            	<li><a href="#">More Electronics</a></li>
+                            	<li><a href="#">TV, Video & Audio</a></li>
+                            	<li><a href="#">Video Games</a></li>
+                            </ul>
+                        </li>
+                    	<li><a href="#">More Electronics</a></li>
+                    	<li><a href="#">TV, Video & Audio</a></li>
+                    	<li><a href="#">Video Games</a></li>
+                    </ul>
+                </li>
+            	<li><a href="#">Collectibles & Art</a></li>
+            	<li><a href="#">Home & Outdoors</a></li>
+            	<li><a href="#">Entertainment</a></li>
+            	<li><a href="#">Coupons</a></li>
+            </ul>
+        </div><!-- Main-menu -->
+        
+        <div class="clear"></div>
+        
+        <div id="home-slider">
+            <div class="slider-img">
+                <a href="#"><img src="images/1.png" alt="" /></a>
+            </div>
+            <div class="slider-text">
+                <h1><a href="#">Heelys</a> Skate Shoes</h1>
+                <p>Lighter! Faster! More styles than ever!</p>
+                <p>Wear them as a cool looking pair of shoes or pop in the wheels when you're ready... to have fun.</p>
+                
+                <a href="#" class="button">Look Closer</a>
+            </div>
+        </div><!-- End Home-slider -->
+        
+        <div class="clear"></div>
+        
+        <div id="new-products">
+            <h2>Featured</h2>
+            <hr class="wave-line" />
+            <div class="clear"></div>
+            
+            <ul class="items-list">
+                <li>
+                    <div class="items-image-block">
+                        <a href="#"><img src="images/2.png" alt="" /></a>
+                    </div>
+                    <a href="#" class="item-name-link">Heelys Skate Shoes 0674</a>
+                    <div class="item-list-price">$120.50</div>
+                    <div class="item-rating">5</div>
+                </li>
+                <li>
+                    <div class="items-image-block">
+                    	<a href="#"><img src="images/3.png" alt="" /></a>
+                    </div>
+                    <a href="#" class="item-name-link">Avesome bright cellphone</a>
+                    <div class="item-list-price">$2500.00</div>
+                    <div class="item-rating">3</div>
+                </li>
+                <li>
+                    <div class="items-image-block">
+                    	<a href="#"><img src="images/4.png" alt="" /></a>
+                    </div>
+                    <a href="#" class="item-name-link">Cool Black Macho Glasses</a>
+                    <div class="item-list-price">$79.99</div>
+                    <div class="item-rating">2</div>
+                </li>
+                <li>
+                    <div class="items-image-block">
+                    	<a href="#"><img src="images/5.png" alt="" /></a>
+                    </div>
+                    <a href="#" class="item-name-link">Heelys Skate Grind Shoes 0850</a>
+                    <div class="item-list-price hot-price">$1200</div>
+                    <div class="item-rating">5</div>
+                </li>
+                <li>
+                    <div class="items-image-block">
+                    	<a href="#"><img src="images/6.png" alt="" /></a>
+                    </div>
+                    <a href="#" class="item-name-link">Freaky Fold Phone</a>
+                    <div class="item-list-price">$320.50</div>
+                    <div class="item-rating">4</div>
+                </li>
+                <li>
+                    <div class="items-image-block">
+                    	<a href="#"><img src="images/7.png" alt="" /></a>
+                    </div>
+                    <a href="#" class="item-name-link">Heelys Shoes 0933 Multicolored</a>
+                    <div class="item-list-price">$150.50</div>
+                    <div class="item-rating">5</div>
+                </li>
+            </ul>
+            
+        </div><!-- End new-products -->
+        
+        <div class="clear"></div>
+
+        <div id="category" class="main-content">
+            <h2>Footwear</h2>
+            <hr class="wave-line px700" />
+            
+            <div class="sort-line">
+                <div class="pagination">
+                    <a href="#" class="first">&nbsp;</a>
+                    <a href="#" class="prev"></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <span>3</span>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"></a>
+                    <a href="#" class="last"></a>
+                </div>
+                
+                <div class="per-page">
+                    Per page: 
+                    <span>20</span> 
+                    <a href="#">50</a>
+                    <a href="#">100</a>
+                    <a href="#">all</a>
+                </div>
+                
+                <div class="sort-variants">
+                    Show: 
+                    <span>cheap first</span>
+                    <a href="#">expensive first</a>
+                    <a href="#">new items first</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            
+            <div class="items">
+            
+                <div id="item-1" class="item">
+                    <div class="item-img"><a href="#"><img src="images/2.png" alt="" /></a></div>
+                    <div class="item-description" style="z-index:500;">
+                        <a href="#">Heelys Skate Shoes 0674</a>
+                        <div class="item-price">
+                            <div class="item-list-price">$120.50</div>
+                            <div class="item-rating">5</div>
+                        </div>
+                        <p>The Heelys Five-O roller shoes bring you a new style of skating with a special wheel housed in the heel. They allow you to transition to a roll at any given moment for coasting fun and original tricks also features a grind plate on the bottom. Remove the detachable wheel and Heely's® instantly transform into a pair of fashionable street shoes.</p>
+                        <div class="item-controls">
+                            <div class="item-controls-links">
+                                <a href="#" class="wishlist-link">Wishlist</a>
+                                <a href="#" class="compare-link">Compare</a>
+                            </div>
+                            <div class="quant">
+                                Quantity:
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <input type="hidden" name="itemQnt1" value="1" />
+                                        <ul>
+                                            <li class="current-list-item">1</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="add-to-cart-btn"><img src="img/mini-cart.png" />Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                
+                <div id="item-2" class="item">
+                    <div class="item-img"><a href="#"><img src="images/2.png" alt="" /></a></div>
+                    <div class="item-description" style="z-index:499;">
+                        <a href="#">Heelys Skate Shoes 0674</a>
+                        <div class="item-price">
+                            <div class="item-list-price">$120.50</div>
+                            <div class="item-rating">5</div>
+                        </div>
+                        <p>The Heelys Five-O roller shoes bring you a new style of skating with a special wheel housed in the heel. They allow you to transition to a roll at any given moment for coasting fun and original tricks also features a grind plate on the bottom. Remove the detachable wheel and Heely's® instantly transform into a pair of fashionable street shoes.</p>
+                        <div class="item-controls">
+                            <div class="item-controls-links">
+                                <a href="#" class="wishlist-link">Wishlist</a>
+                                <a href="#" class="compare-link">Compare</a>
+                            </div>
+                            <div class="quant">
+                                Quantity:
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <input type="hidden" name="itemQnt2" value="1" />
+                                        <ul>
+                                            <li class="current-list-item">1</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="add-to-cart-btn"><img src="img/mini-cart.png" />Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                
+                <div id="item-3" class="item">
+                    <div class="item-img"><a href="#"><img src="images/2.png" alt="" /></a></div>
+                    <div class="item-description" style="z-index:498;">
+                        <a href="#">Heelys Skate Shoes 0674</a>
+                        <div class="item-price">
+                            <div class="item-list-price">$120.50</div>
+                            <div class="item-rating">5</div>
+                        </div>
+                        <p>The Heelys Five-O roller shoes bring you a new style of skating with a special wheel housed in the heel. They allow you to transition to a roll at any given moment for coasting fun and original tricks also features a grind plate on the bottom. Remove the detachable wheel and Heely's® instantly transform into a pair of fashionable street shoes.</p>
+                        <div class="item-controls">
+                            <div class="item-controls-links">
+                                <a href="#" class="wishlist-link">Wishlist</a>
+                                <a href="#" class="compare-link">Compare</a>
+                            </div>
+                            <div class="quant">
+                                Quantity:
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <input type="hidden" name="itemQnt3" value="1" />
+                                        <ul>
+                                            <li class="current-list-item">1</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="add-to-cart-btn"><img src="img/mini-cart.png" />Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="sort-line" style="margin-top:-25px;">
+                <div class="pagination">
+                    <a href="#" class="first"></a>
+                    <a href="#" class="prev"></a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <span>3</span>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#" class="next"></a>
+                    <a href="#" class="last"></a>
+                </div>
+                
+                <div class="per-page">
+                    Per page: 
+                    <span>20</span> 
+                    <a href="#">50</a>
+                    <a href="#">100</a>
+                    <a href="#">all</a>
+                </div>
+                
+                <div class="sort-variants">
+                    Show: 
+                    <span>cheap first</span>
+                    <a href="#">expensive first</a>
+                    <a href="#">new items first</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        
+        <div id="sidebar">
+            <div class="widget">
+                <h2>Categories</h2>
+                <hr class="wave-line px220" />
+                <div class="widget-body">
+                    <ul>
+                    	<li>Fashion</li>
+                    	<li><a href="#">Motors</a></li>
+                    	<li><a href="#">Electronics</a></li>
+                    	<li><a href="#">Collectibles & Art</a></li>
+                    	<li><a href="#">Home & Outdoors</a></li>
+                    	<li><a href="#">Entertainment</a></li>
+                    	<li><a href="#">Coupons</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="widget">
+                <h2>Brands</h2>
+                <hr class="wave-line px220" />
+                <div class="widget-body">
+                    <ul>
+                    	<li>Heelys</li>
+                    	<li><a href="#">Skechers</a></li>
+                    	<li><a href="#">Heelys</a></li>
+                    	<li><a href="#">Skechers</a></li>
+                    	<li><a href="#">Heelys</a></li>
+                    	<li><a href="#">Skechers</a></li>
+                    	<li><a href="#">Heelys</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clear"></div>
+
+        <div id="footer">
+            <div id="copyright" class="footer-widget">
+                <p>© StartCommerce 2012</p>
+                <div id="buttons">
+                    <a href="#"><img src="img/pay/paypal.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/o.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/egold.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/mastercard.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/westernunion.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/cashu.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/americanexpress.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/cirrus.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/worldpay.png" alt="" /></a>
+                </div>
+            </div>
+            
+            <div id="contact-us" class="footer-widget">
+                <h3>Contact us</h3>
+                <p>+7 (905) 123-45-67 <br />
+                   +7 (960) 456-78-90 <br />
+                   +7 (123) 444-55-66
+                </p>
+                <p>inno_end@mail.ru <br />
+                   annrim@yandex.ru
+                </p>
+            </div>
+            
+            <div id="latest-tweets" class="footer-widget">
+                <h3>Latest Tweets</h3>
+                <p>Academy - Heelys Boys' Wave Skate Shoes: The Heelys Boys' Wave Skate Shoes feature Fats lo -profile wheels and A...</p>
+                <p>Flocking is my new thing. You get a group of people with rollerblades or heelys and shred through the mall in a V like a flock of birds.</p>
+            </div>
+            
+            <div id="links" class="footer-widget">
+                <h3>Contact us</h3>
+                <ul>
+                	<li><a href="#">My account</a></li>
+                	<li><a href="#">Shopping Cart</a></li>
+                	<li><a href="#">Wishlist</a></li>
+                	<li><a href="#">Compare items</a></li>
+                	<li><a href="#">Newsletter</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#"><img src="img/social/twitter.png" alt="" /></a>
+                    <a href="#"><img src="img/social/facebook.png" alt="" /></a>
+                    <a href="#"><img src="img/social/google.png" alt="" /></a>
+                </div>
+            </div>
+            
+        </div><!-- End Footer -->
+        
+    </div>
+ </body>
+</html>

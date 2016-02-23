@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+   <title>Shop-cart</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="style.css" />
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu:500italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+   <script type="text/javascript" src="js/jquery.autocolumnlist.js"></script>
+   <script type="text/javascript" src="js/jquery.infinitecarousel.js"></script>
+   <script type="text/javascript" src="js/theme.js" ></script>
+ </head>
+ <body>
+	<div id="container">
+        <div id="header">
+            <div id="corner"></div>
+            <div id="logo">
+                <a href="#"><img src="img/logo.png" alt="" /></a>
+                <h1 id="shop-name">StartCommerce</h1>
+                <em id="shop-desc">try making something new <br /> entertainment shopping</em>
+            </div><!-- End Logo -->
+            
+            <div id="shop-services">
+                <a href="#" class="wishlist-link">Wishlist</a>
+                <a href="#" class="compare-link">Compare</a>
+                
+                <div class="cart-mini">
+                    <a href="#" class="cart-link">Cart</a>
+                    <div class="cart-mini-state">
+                        | 3 items - $2150.00
+                    </div>
+                </div>
+            </div>
+            
+            <div id="shop-controls">
+                <div id="language-list">
+                    <ul id="language">
+                        <li class="current-list-item english-lang">English</li>
+                        <li class="english-lang"><a href="#">English</a></li>
+                        <li class="russian-lang"><a href="#">Russian</a></li>
+                    </ul>
+                </div>
+                <div id="currency-list">
+                    <ul id="currency">
+                        <li class="current-list-item dollar">US Dollar</li>
+                        <li class="dollar"><a href="#">US Dollar</a></li>
+                        <li class="yen"><a href="#">Japanese Yen</a></li>
+                        <li class="euro"><a href="#">Euro</a></li>
+                    </ul>
+                </div>
+                <div id="search">
+                    <form method="get" id="searchform" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <input type="text" value="" name="s" id="s" placeholder="Search here" />
+                        <input type="submit" id="searchsubmit" value="" />
+                    </form>
+                </div>
+                
+                <div id="user" class="logged">
+                    <p>Welcome <a href="#">AnnaLitvinchuk</a>! <a href="#" class="signout">Sign out</a></p>
+                </div>
+            </div>
+            
+        </div><!-- End Header -->
+        
+        <div class="clear"></div>
+        
+        <div id="main-menu">
+            <ul>
+            	<li><a href="#">Fashion</a></li>
+            	<li><a href="#">Motors</a></li>
+            	<li><a href="#">Electronics</a>
+                    <ul class="sub-menu">
+                    	<li><a href="#">Cameras & Photo</a></li>
+                    	<li><a href="#">Cell Phones & PDAs</a></li>
+                    	<li><a href="#">Computers & Networking</a></li>
+                    	<li><a href="#">More Electronics</a></li>
+                    	<li><a href="#">TV, Video & Audio</a></li>
+                    	<li><a href="#">Video Games</a></li>
+                    	<li><a href="#">Cameras & Photo</a></li>
+                    	<li><a href="#">Cell Phones & PDAs</a></li>
+                    	<li><a href="#">Computers & Networking</a>
+                            <ul class="sub-menu">
+                            	<li><a href="#">Cameras & Photo</a></li>
+                            	<li><a href="#">Cell Phones & PDAs</a></li>
+                            	<li><a href="#">Computers & Networking</a></li>
+                            	<li><a href="#">More Electronics</a></li>
+                            	<li><a href="#">TV, Video & Audio</a></li>
+                            	<li><a href="#">Video Games</a></li>
+                            </ul>
+                        </li>
+                    	<li><a href="#">More Electronics</a></li>
+                    	<li><a href="#">TV, Video & Audio</a></li>
+                    	<li><a href="#">Video Games</a></li>
+                    </ul>
+                </li>
+            	<li><a href="#">Collectibles & Art</a></li>
+            	<li><a href="#">Home & Outdoors</a></li>
+            	<li><a href="#">Entertainment</a></li>
+            	<li><a href="#">Coupons</a></li>
+            </ul>
+        </div><!-- Main-menu -->
+        
+        <div class="clear"></div>
+        
+        <div class="main-content">
+            <div id="breadcrumbs">
+                <a href="#">Home Page</a><div class="spliter"></div>
+                <span>Shopping cart</span>
+            </div>
+        </div>
+        
+        <div id="shopping-cart">
+            <h2>Shopping cart</h2>
+            <hr class="wave-line" />
+            <div class="clear"></div>
+            
+            <table cellspacing="0" cellpadding="0">
+                <thead>
+                    <tr>
+                        <td style="padding-left:31px; width:189px;">Image</td>
+                        <td style="width:325px;">Product Name</td>
+                        <td style="width:84px;">Qty</td>
+                        <td style="width:140px;">Unit Price</td>
+                        <td style="width:144px;">Total</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    	<td><img src="images/2.png" alt="" /></td>
+                    	<td><a href="#">Heelys Skate Shoes 0674</a></td>
+                    	<td>
+                            <div class="quant">
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <input type="hidden" name="itemQnt" value="1" />
+                                        <ul>
+                                            <li class="current-list-item">1</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>120.50 USD</td>
+                        <td>120.50 USD</td>
+                        <td><a href="#" class="remove"></a></td>
+                    </tr>
+                    <tr>
+                    	<td><img src="images/2.png" alt="" /></td>
+                    	<td><a href="#">Heelys Skate Shoes 0674</a></td>
+                    	<td>
+                            <div class="quant">
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <input type="hidden" name="itemQnt" value="1" />
+                                        <ul>
+                                            <li class="current-list-item">1</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>120.50 USD</td>
+                        <td>120.50 USD</td>
+                        <td><a href="#" class="remove"></a></td>
+                    </tr>
+                    <tr>
+                    	<td><img src="images/2.png" alt="" /></td>
+                    	<td><a href="#">Heelys Skate Shoes 0674</a></td>
+                    	<td>
+                            <div class="quant">
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <input type="hidden" name="itemQnt" value="1" />
+                                        <ul>
+                                            <li class="current-list-item">1</li>
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                        <td>120.50 USD</td>
+                        <td>120.50 USD</td>
+                        <td><a href="#" class="remove"></a></td>
+                    </tr>
+                    <tr style="height:63px;">
+                        <td colspan="6">
+                            <p>Enter your coupon code (<a href="#">where to get one?</a>):</p>
+                            <input type="text" name="coupon" id="coupon" placeholder="0000-0000-0000-0000" />
+                            <span id="coupon-validate" class="validate valid"></span>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="vertical-align:bottom; padding-left:40px;">
+                            Subtotal
+                            <br />
+                            VAT 17%
+                        </td>
+                        <td style="vertical-align:bottom;">
+                            361.50 USD
+                            <br />
+                            17.50 USD
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td style="font-weight:bold; padding-left:40px;">
+                            Total
+                        </td>
+                        <td style="font-weight:bold; font-size: 18px; color:#00a6dd;">
+                            379.00 USD
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2" style="height:37px;">
+                            <a href="#" class="button">Check Out</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+        </div><!-- End new-products -->
+        
+        <div class="clear"></div>
+
+        <div id="footer">
+            <div id="copyright" class="footer-widget">
+                <p>© StartCommerce 2012</p>
+                <div id="buttons">
+                    <a href="#"><img src="img/pay/paypal.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/o.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/egold.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/mastercard.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/westernunion.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/cashu.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/americanexpress.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/cirrus.png" alt="" /></a>
+                    <a href="#"><img src="img/pay/worldpay.png" alt="" /></a>
+                </div>
+            </div>
+            
+            <div id="contact-us" class="footer-widget">
+                <h3>Contact us</h3>
+                <p>+7 (905) 123-45-67 <br />
+                   +7 (960) 456-78-90 <br />
+                   +7 (123) 444-55-66
+                </p>
+                <p>inno_end@mail.ru <br />
+                   annrim@yandex.ru
+                </p>
+            </div>
+            
+            <div id="latest-tweets" class="footer-widget">
+                <h3>Latest Tweets</h3>
+                <p>Academy - Heelys Boys' Wave Skate Shoes: The Heelys Boys' Wave Skate Shoes feature Fats lo -profile wheels and A...</p>
+                <p>Flocking is my new thing. You get a group of people with rollerblades or heelys and shred through the mall in a V like a flock of birds.</p>
+            </div>
+            
+            <div id="links" class="footer-widget">
+                <h3>Contact us</h3>
+                <ul>
+                	<li><a href="#">My account</a></li>
+                	<li><a href="#">Shopping Cart</a></li>
+                	<li><a href="#">Wishlist</a></li>
+                	<li><a href="#">Compare items</a></li>
+                	<li><a href="#">Newsletter</a></li>
+                </ul>
+                <div class="social">
+                    <a href="#"><img src="img/social/twitter.png" alt="" /></a>
+                    <a href="#"><img src="img/social/facebook.png" alt="" /></a>
+                    <a href="#"><img src="img/social/google.png" alt="" /></a>
+                </div>
+            </div>
+            
+        </div><!-- End Footer -->
+        
+    </div>
+ </body>
+</html>

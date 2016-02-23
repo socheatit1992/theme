@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<products>
+	<category>
+		<name>Me</name>
+		<img></img>
+		<children>
+			<category>
+				<name>Me child</name>
+				<img>images6.jpg</img>
+			</category>
+			<category>
+				<name>Me child 2</name>
+				<img>images6.jpg</img>
+			</category>
+		</children>
+	</category>
+	<category></category>
+
+	<brand>
+		<name>Brand1</name>
+		<img>images5.jpg</img>
+		<children>
+			<brand>
+				<name>Me child</name>
+				<img>images6.jpg</img>
+			</brand>
+			<brand>
+				<name>Me child 2</name>
+				<img>images6.jpg</img>
+			</brand>
+		</children>
+	</brand>
+
+	<product>
+		<tax_input_categories>Soma bla catt1|Soma bla catt2</tax_input_categories>
+		<tax_input_brands>Soma bla brand 1|Soma bla brand 2|Soma bla brand 3</tax_input_brands>
+		<post_content>Description, bla-bla-bla</post_content>
+		<post_excerpt>Short Description, ......................bla-bla-bla</post_excerpt>
+		<post_name>prod-from-dummy-1</post_name>
+		<post_title>Prod From Dummy 1</post_title>
+		<tags_input>tag1|tag lalala|tag3</tags_input>
+		<price>386</price>
+		<weight>12</weight>
+		<sku>hmmdd</sku>
+		<quantity>21</quantity>
+		<featured>1</featured>
+		<imgs>
+			<img>
+				<filename>images4.jpg</filename>
+			</img>
+			<img>
+				<filename>images6.jpg</filename>
+			</img>
+		</imgs>
+		<parameters>
+			<parameter>
+				<label>Color</label>
+				<htmltype>9</htmltype>
+				<options>
+					<option>
+						<value>Red</value>
+						<price>0</price>
+						<absolute>0</absolute>
+					</option>
+					<option>
+						<value>Grin</value>
+						<price>12</price>
+						<absolute>0</absolute>
+					</option>
+					<option>
+						<value>Blue</value>
+						<price>14</price>
+						<absolute>1</absolute>
+					</option>
+				</options>
+			</parameter>
+		</parameters>
+	</product>
+	<product>
+		
+	</product>
+</products>

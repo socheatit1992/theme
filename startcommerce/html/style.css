@@ -1,0 +1,321 @@
+/*
+Theme name: StartCommerce
+Author: Andrey Grin
+Author URL: http://www.free-lance.ru/users/GA_West
+Version: 1.0
+*/
+
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+textarea {resize:none;}
+
+body {background: #f6f0e4; padding:18px 0 19px 0; font-family:Verdana, Geneva, sans-serif;}
+
+a {color:#ff7e00;}
+a:hover {color:#00a6dd;}
+.clear {clear:both;}
+.px700 {width:700px !important;}
+.px220 {width:220px !important;}
+
+h1 {font:italic 36px/55px Ubuntu; color:#333333;}
+h2 {font:italic 30px/45px Ubuntu; color:#00a6dd;}
+h3 {font:italic 18px/18px Ubuntu; color:#00a6dd;}
+
+#container {width:940px; margin:0 auto; padding: 0 19px; background:#fff; -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);}
+    
+/*
+---------------------------------------------------------------------------------------------
+Header -----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+*/   
+   
+#header {position:relative; padding-top:29px; background:url(img/wave.png) left bottom repeat-x; height:114px;}
+    #corner {position:absolute; top:-5px; left:-24px; width:86px; height:86px; background:url(img/corner.png) no-repeat; z-index:1;}
+    #logo {position:relative; z-index:5; margin:0 64px 0 0; float:left; width:310px;}
+        #logo a {float:left; margin:5px 24px 0 0;}
+    #shop-name {color:#333333; font:italic 30px/45px Ubuntu; margin-top:-5px; padding-left:96px;}
+    #shop-desc {color:#666666; font:italic 11px/17px Verdana;}
+    
+    #shop-services {float:left; width:253px; margin-top:7px;}
+        .wishlist-link {background:url(img/wishlist-ico.png) no-repeat; font-size:12px; line-height:18px; padding:1px 0 5px 29px; margin-right:31px;}
+        .compare-link {background:url(img/compare-ico.png) no-repeat; font-size:12px; line-height:18px; padding:1px 0 5px 25px;}
+    
+        .cart-mini {margin-top:35px; font-size:12px; color:#333333; margin-left:-3px; background:url(img/cart-ico.png) no-repeat; padding: 0 0 2px 33px; height:18px;}
+            .cart-link {font-size:12px; line-height:18px; float:left; text-decoration:none; border-bottom: 1px dashed; margin:-2px 5px 0 0; padding:0;}
+            @-moz-document url-prefix() { .cart-link {margin-top:-1px; } } /* Firefox HACK */
+            .cart-mini-state {}
+            
+    #shop-controls {position:relative; width:300px; float:left; padding-top:62px;}
+        #language-list {position:absolute; top:7px; right:260px; text-indent:50px; background:#f1f1f1 url(img/darr.png) 100% 12px no-repeat; overflow:hidden; width:40px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3);}
+        #currency-list {position:absolute; top:7px; right:210px; text-indent:70px; background:#f1f1f1 url(img/darr.png) 100% 12px no-repeat; overflow:hidden; width:40px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3);}
+            #currency-list:hover #currency .current-list-item {background-position:left top !important; opacity:0.7;}
+            #language {}
+                #language li {padding-left:26px; margin:7px 6px; font-size:11px;}
+            #currency {margin:-4px 0 0 -2px; width:200px;}
+                #currency li {padding:2px 0 0 26px; margin:7px 6px; font-size:11px; height:19px;}
+                #currency li:last-child {margin:7px 6px 0px 6px;}
+                #language li a, #currency li a {color:#333333; font-size:11px; text-decoration:none;}
+                #language li a:hover {color:#00a6dd;}
+                #currency li:hover {background-position:left bottom;}
+                #currency li:hover a {color:#00a6dd;}
+                .current-list-item {color:#666666 !important;}
+                #currency .current-list-item {color:#666666 !important; background-position:left bottom !important;}
+                #currency .current-list-item:hover {color:#666666 !important; cursor:default !important; background-position:left top !important;}
+
+                .english-lang {background:url(img/english.png) 0 2px no-repeat;}
+                .russian-lang {background:url(img/russian.png) 0 2px no-repeat;}
+                
+                .dollar {background:url(img/dollar.png) 0 0 no-repeat;}
+                .yen {background:url(img/yen.png) 0 0 no-repeat;}
+                .euro {background:url(img/euro.png) 0 0 no-repeat;}
+        
+        #search {position:absolute; right:0px; top:7px;}
+            #searchform {position:relative;}
+                #s {width:193px;}
+                input[type="text"] {background:#f1f1f1; color:#666666; font-size:11px; padding-left: 7px; height:25px; border:none; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3);}
+                #searchsubmit {position:absolute; top: 3px; right:3px; width:21px; height:21px; background:url(img/search-submit.png) no-repeat; border:none;}
+                #searchsubmit:hover {cursor:pointer;}
+                
+        #user {font-size:12px; color:#333333; line-height:18px; text-align:right;}   
+            .signout {text-decoration:none; border-bottom:1px dashed;}
+              
+/*
+---------------------------------------------------------------------------------------------
+Main Menu -----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+*/
+
+#main-menu {margin:19px 0 23px 0;}
+    #main-menu ul {}
+        #main-menu ul li {float:left; margin: 0 16px; position:relative;}
+            #main-menu ul li a {text-decoration:none; font-size:16px;}
+            .sub-menu {display:none; position:absolute; top:27px; z-index:900; left:-8px; width:auto; background:#fff; border:1px solid #d2cdc3; padding: 13px 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3); margin:0;}
+				.sub-menu li {margin:0 !important; padding:0;}
+					.sub-menu li a {font-size:12px !important; white-space: nowrap;}
+			.sub-menu li .sub-menu {display:none; top:0px; right:-200px; left:inherit; position:absolute;}		
+			.column {float:left; width:160px; border-right:1px dashed #dcdcdc; padding:0 15px;}       
+            .sub-menu .sub-menu .column, .sub-menu .sub-menu .sub-menu .column, .last {border:none;}
+            				
+/*
+----------------------------------------------------------------------------------------------
+Home Slider ----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+
+#home-slider {background:#f6f0e4; height:251px; width:838px; margin:20px 0 28px 0; padding:38px 42px 38px 60px;}
+    .slider-img {float:left; margin-right:90px;}
+    .slider-text {}
+        .slider-text a {text-decoration:none;}
+        .slider-text p {color:#333333; font-size:17px; line-height:18px; font-style:italic; margin-bottom:30px;}
+        .button {color:#fff; font-size:18px; font-weight:bold; text-align:center; height:37px; line-height:35px; background:url(img/button.png) repeat-x; width:240px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; display:block; float:left;}
+        
+/*
+----------------------------------------------------------------------------------------------
+Info Blocks ----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+
+#info-blocks {margin-left:-11px;}
+	.info-block {float:left; width:444px; margin:0 16px 0 11px;}
+		.info-block em {font:italic 16px/18px Ubuntu; color:#666666; margin: 17px 0 0 0;}
+		.info-block p, .content p  {color:#232323; font-size:12px; margin-top:17px; line-height:18px;}
+		.info-block ul li, .content ul li {background:url(img/bullet.png) 0px 13px no-repeat; font-size:12px; line-height:27px; padding-left:10px;}
+		
+/*
+----------------------------------------------------------------------------------------------
+New products ---------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+
+#new-products {}
+	#new-products h2 {margin:0;}
+	hr.wave-line {height:3px; border:none; background:url(img/wave.png) repeat-x; width:100%; display:block; margin:0 0 5px 0;}
+	
+.items-list li {float:left; width:156px; height:203px; text-align:center; font-size:12px;}	
+.items-list li:hover {background:#fff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3); box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3); } 
+	.items-image-block {height:120px; width:156px; display: table-cell; vertical-align:middle;}
+        .item-name-link {height:47px; display:block;}
+        .item-list-price {width:77px; height:21px; text-align:center; padding-top:1px; background:url(img/price.png) left top no-repeat; color:#fff; font-size:12px; line-height:18px; font-weight:bold; float:left; margin: 0 3px 0 10px;}
+        .content .item-list-price {width:139px; height:38px; text-align:center; padding-top:2px; background:url(img/single-price.png) left top no-repeat; color:#fff; font-size:21px; line-height:32px; font-weight:bold; float:left; margin: 0;}
+        .hot-price {background-position:left bottom; font-size:16px;}
+        .item-rating {float:left; margin-top:4px;}
+        .star-on {width:11px; height:11px; background:url(img/stars.png) left bottom no-repeat; display:block; float:left; margin-left:1px;}
+        .content .star-on {width:20px; height:19px; background:url(img/bstars.png) left bottom no-repeat; display:block; float:left; margin-left:1px;}
+        .star-off {width:11px; height:11px; background:url(img/stars.png) left top no-repeat; display:block; float:left; margin-left:1px;}
+        .content .star-off {width:20px; height:19px; background:url(img/bstars.png) left top no-repeat; display:block; float:left; margin-left:1px;}
+       
+#bestsellers {margin:15px 0 0 0;}
+       
+/*
+----------------------------------------------------------------------------------------------
+Banners --------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/        
+
+#banners {margin:38px 0 0 -20px; }
+    .banner {float:left; margin-left:20px;}
+
+/*
+----------------------------------------------------------------------------------------------
+Brands ---------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/     
+    
+#brands {width:940px; position:relative; margin:42px 0 34px 0; height:90px;}    
+    #brands .wrapper {width:940px; overflow:auto; position:absolute; top:0; height:90px; background:#faf7f1; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+        #brands .wrapper ul {position:absolute; top:0; width: 9999px; list-style-image:none; list-style-position:outside; list-style-type:none;}
+            #brands .wrapper ul li {display:block; float:left; width:120px; height:90px; padding:0 0 0 30px;}
+                #brands .wrapper ul li a {text-align:center; vertical-align:middle; width:120px; height:90px; display:table-cell;}
+        #brands .arrow {display: block; height: 33px; width: 13px; text-indent: -9999px; position: absolute; top: 30px; cursor: pointer;}
+            #brands .forward { background: url(img/brand-right.png) no-repeat 0 0; right: -8px;}
+            #brands .back { background: url(img/brand-left.png) no-repeat 0 0; left: -8px;}
+/*
+----------------------------------------------------------------------------------------------
+Footer ---------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/ 
+    
+#footer {width:940px; height:156px; background:url(img/footer.png) repeat-x; margin:34px 0 0 -19px; padding:21px 19px;}
+
+    .footer-widget {float:left;}
+
+    #copyright {float:left; width:200px;}
+        #copyright p {color:#666666; font-size:12px; line-height:18px;}
+    #buttons {padding-left:6px;}
+        #buttons img {margin:6px 0 0 10px;}
+        
+    #contact-us {margin-left:38px; width:130px;}
+        #contact-us p {margin-top:12px; color:#333333; font-size:12px; line-height:18px;}
+        
+    #latest-tweets {margin-left:42px; width:390px;}
+        #latest-tweets p {margin-top:12px; color:#333333; font-size:12px; line-height:18px;}
+        
+    #links {margin-left:19px;}
+        #links ul {margin-top:12px; font-size:12px;}
+            #links ul li {line-height:18px;}
+        .social {margin-top:5px;} 
+            .social img {margin-right:3px;}
+            
+/*
+----------------------------------------------------------------------------------------------
+Main Content - Category ----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+
+#category {margin-top:20px; width:700px; float:left;}
+    .sort-line {margin-bottom:42px;}
+        .pagination {float:left; margin-left:-2px; color:#232323;}
+            .pagination  .first {width:12px; height:18px; background:url(img/page-first.png) 0 5px no-repeat; text-decoration:none; margin-right:1px;}
+            .pagination  .prev {width:7px; height:18px; background:url(img/page-prev.png) 0 5px no-repeat; text-decoration:none;}
+            .pagination  .next {width:7px; height:18px; background:url(img/page-next.png) 0 5px no-repeat; text-decoration:none;}
+            .pagination  .last {width:12px; height:18px; background:url(img/page-last.png) 0 5px no-repeat; text-decoration:none; margin-left:1px;}
+            .pagination a,
+            .pagination span {font-size:12px; line-height:18px; display:block; float:left; margin:0 2px;}
+        
+        .per-page {float:left; font-size:12px; color:#232323; margin-left:50px;}
+            .per-page a, .per-page span {margin:0 3px;}
+             
+        .sort-variants {float:left; font-size:12px; color:#232323; margin-left:40px;}
+            .sort-variants a, .sort-variants span {margin:0 3px;}
+            
+    /* items */
+    .items {}
+        .item {margin:75px 0;}
+            .item-img {float:left; position:relative; z-index:550;}
+            .item-description {padding-left:150px; position:relative; font-size:12px; line-height:18px; color:#232323;}
+                .item-price {position:absolute; top:0; right:0;}
+                .item-description p {margin:10px 0;}
+            
+            .item-controls {position:relative; z-index:100;}
+            
+                .item-controls-links {float:left;}
+                
+                .select-wrapper {position:relative; float:right; margin:-22px 0 0 3px;}
+                @-moz-document url-prefix() { .select-wrapper {position:relative; float:right; margin:-5px 0 0 3px;} } /* Firefox HACK */
+                    .select {background:#f1f1f1 url(img/darr.png) 100% 12px no-repeat; overflow:hidden; width:40px; position:absolute; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; -webkit-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3); box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.3);}
+                        .select ul li {padding:0 0 0 5px; margin:3px 6px; font-size:11px; line-height:18px; background-image:none;}
+                        .select ul li:hover {color:#fff; background:#00a6dd; margin: 3px 0; cursor:pointer; padding-left:11px;}
+                        .select .current-list-item {padding-top:2px;}
+                        .select .current-list-item:hover {color:#666666 !important; cursor:default; background:transparent; padding-left:11px;}
+                        .content .select ul li {margin:2px 6px !important;}
+                        .content .select ul li:hover {margin:2px 0 !important;}
+                        
+                .quant {float:left; margin: 0 10px 0 40px;}
+                .content .quant {float:left; margin:5px 10px 0 116px; font-size:12px;}
+                
+                .add-to-cart-btn {float:right; display:block; color:#fff; font-size:12px; margin-top:-6px; font-weight:bold; text-decoration:none; text-align:center; height:27px; line-height:25px; background:url(img/button.png) repeat-x; width:128px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+                .content .add-to-cart-btn {float:right; display:block; color:#fff; font-size:18px; margin-top:-6px; font-weight:bold; text-decoration:none; text-align:center; height:37px; line-height:33px; background:url(img/button.png) repeat-x; width:209px; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+                .add-to-cart-btn img {margin:4px -6px 0 13px; float:left;}
+                .content .add-to-cart-btn img {margin:8px -18px 0 28px; float:left;}
+                
+/*
+----------------------------------------------------------------------------------------------
+Main Content - Sidebar ----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+
+#sidebar {margin:20px 0 0 20px; width:220px; float:left;}
+    .widget {margin-bottom:30px;}
+        .widget-body ul li {background:url(img/bullet.png) 0px 13px no-repeat; font-size:12px; line-height:27px; padding-left:12px;}
+        
+/*
+----------------------------------------------------------------------------------------------
+Main Content - Single ------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+.main-content {margin-bottom:25px;}
+
+#breadcrumbs {background:#f6f0e4; height:26px; width:932px; margin:20px 0 32px 0; color:#232323; font-size:12px; line-height:24px; padding-left:8px;}
+    #breadcrumbs a, #breadcrumbs span {float:left; margin:0 5px;}
+    .spliter {float:left; width:13px; height:26px; background:url(img/spliter.png) no-repeat;}
+
+.content {padding-left:476px;}
+    .content h2 {line-height:55px;}
+    
+    table .item-rating {margin-bottom:10px;}
+    table td {text-align:center; vertical-align:middle; color:#666666; font-size:12px; padding:0 20px 7px 0;}
+    .text-left {text-align:left; font:italic 16px/18px Ubuntu; padding-right:10px;}
+    
+    .single-links-control {text-align:right; margin:20px 22px 0 0;}
+    .buy-option {margin:25px 22px 0 0;}
+    
+/*
+----------------------------------------------------------------------------------------------
+Main Content - Gallery -----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+#single-gallery {float:left; margin-right:16px; }
+        #single-gallery #imgslider {margin:0 0 17px 0; clear:right; position:relative; width:460px; height:263px; display:block;}
+            #single-gallery #imgslider img {border:none;}
+        #single-gallery ul li  {float:left; margin-right:13px; background:url(img/wave.png) repeat-x; width:140px; height:100px; padding-top:25px; text-align:center;}
+        #single-gallery ul li:last-child  {float:left; margin-right:0px;}
+    .back-img {position:absolute; top:50%; left:50%; opacity:1;}
+    
+/*
+----------------------------------------------------------------------------------------------
+Shopping Cart --------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+*/
+ 
+#shopping-cart {}
+    #shopping-cart table {width:940px; border:0; margin:20px 0 0 0;}
+        #shopping-cart table thead {background:#f6f0e4; height:26px;}
+            #shopping-cart table thead td {color:#333333; font-size:14px; font-style:italic; vertical-align:middle; padding:0; text-align:left;}
+            #shopping-cart table tbody td {vertical-align:middle; padding:0; text-align:left; border-bottom:1px solid #dcdcdc;}
+            #shopping-cart table tbody td .quant {margin:-8px 0 0 0;}
+            #shopping-cart table tbody td p {float:left;}
+            #shopping-cart table tbody td img {margin-left:8px;}
+            #shopping-cart table tbody tr {height:140px;}
+            #shopping-cart table tfoot td .button {width:181px;}
+            #shopping-cart table tfoot td  {padding:0; height:55px; text-align:left;}
+            #shopping-cart table tfoot td a  {text-decoration:none;}
+            
+    .remove {width:12px; height:12px; display:block; background:url(img/remove.png) no-repeat;}
+    #coupon {width:114px; margin: -4px 5px 0 25px; float:left;}
+    #coupon-validate {float:left;}
+        .validate {display:block; width:18px; height:18px;}
+        .valid {background: url(img/valid.png) no-repeat;}

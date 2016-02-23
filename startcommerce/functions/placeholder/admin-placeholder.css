@@ -1,0 +1,65 @@
+/* Reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+textarea {resize:none;}
+
+html, body {height:100%;}
+* html #wrapper {height: 100%;}
+
+body {font-family:Arial, Helvetica, sans-serif;}
+
+h1 {text-align:center; font-family: 'Lato', sans-serif; font-size:32px; color:#333333; line-height:32px;}
+h2 {font-family: 'Lato', sans-serif; font-size:21px; color:#333333; line-height:21px;}
+a {color:#0073b5;}
+#container {margin:0 auto; min-height:100%;}
+
+#header-wrapper {background:url(img/header-bg.png) repeat-x;}
+	#header {margin:0 auto; width:940px; padding:39px 20px 0 20px; padding-bottom:40px;}
+    #logo {float:left; margin:-10px 0 20px 2px; position:relative; text-shadow:0 1px 1px #252322;}
+        #logo a {text-decoration:none;}
+        #logo-part1 {color:#ffba00; font-size:36px; font-weight:900; margin-right:19px;}
+        #logo-part2 {color:#fff; font-size:36px;}
+        #logo-part3 {color:#b7b7ba; font-size:28px; font-family:«Trebuchet MS», Arial, Helvetica, sans-serif;}
+        #logo img {position:absolute; top:19px; left:139px;}
+    
+    #main-menu {width:940px; background:url(img/main-menu-bg.png) top repeat-x; height:56px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;}
+        #main-menu li {display:block; position:relative; float:left; height:39px; padding: 17px 41px 0;}
+        #main-menu li:first-child {-moz-border-radius-topleft: 3px; -moz-border-radius-topright: 0px; -moz-border-radius-bottomright: 0px; -moz-border-radius-bottomleft: 3px; -webkit-border-radius: 3px 0px 0px 3px; border-radius: 3px 0px 0px 3px;}
+        #main-menu li:last-child {-moz-border-radius-topleft: 0px; -moz-border-radius-topright: 3px; -moz-border-radius-bottomright: 3px; -moz-border-radius-bottomleft: 0px; -webkit-border-radius: 0px 3px 3px 0px; border-radius: 0px 3px 3px 0px;}
+        #main-menu li:hover {background:url(img/hover-left.png) top left no-repeat, url(img/hover-right.png) top right no-repeat, url(img/main-menu-bg.png) 0 -56px repeat-x;}
+        #main-menu li.current-menu-item {background:url(img/hover-left.png) top left no-repeat, url(img/active-right.png) top right no-repeat, url(img/main-menu-bg.png) 0 -112px repeat-x;}
+            #main-menu li a {font-size:14px; color:#fff; line-height:22px; text-decoration:none;}
+       
+    .get-started  {display:block; width:250px; height:50px; background:url(img/get-started.png) no-repeat; margin:20px 0 0 13px;}
+    .order  {display:block; width:130px; height:40px; background:url(img/order.png) no-repeat;}
+    .download  {display:block; width:130px; height:40px; background:url(img/download.png) no-repeat;}
+    .get-started:hover  {background-position:0 -50px;}
+    .order:hover  {background-position:0 -40px;}
+    .download:hover  {background-position:0 -40px;}
+    .get-started:active  {background-position:0 -100px;}
+    .order:active  {background-position:0 -80px;}
+    .download:active  {background-position:0 -80px;}
+    
+#content-wrapper {background:url(img/main-bg.png) repeat-x; padding-top:16px;}
+    #content {background:url(img/content-bg.png) no-repeat top center; margin:0 auto; width:948px; padding:58px 24px 0 24px;}
+    .category-page #content {padding:20px 24px 0 24px;}
+    .single-page #content {padding:20px 24px 0 24px;}
+    
+    .column3 {float:left; width:303px; margin:0 17px 0 0;}
+        .column3 h2 {font-family: 'Lato', sans-serif; font-size:21px; color:#333333; padding-left:43px; line-height:32px; margin-bottom:32px;}
+        .column-text {font-size:14px; color:#666666; line-height:22px; margin-bottom:23px;}
+    .last-column {margin:0; clear:right;}
+    
+    .button {background:url(img/button.png) no-repeat; display:block; width:302px; height:30px; text-align:center; padding-top:8px;}
+        .button a {color:#0073b5; font-size:13px; text-shadow:1px 1px 0 #fff;  text-decoration:none;}
+
+    .quote {margin:53px 0 53px -18px; padding:18px 80px; width:822px; background:#f9f9f9; border:1px solid #eeeeee; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0px 0px 7px 4px #fff; -moz-box-shadow: inset 0px 0px 7px 4px #fff; box-shadow: inset 0px 0px 7px 4px #fff;}
+        .quote h3 {color:#333333; font-size:21px; font-style:italic; font-weight:400; font-family:Georgia, «Times New Roman», Times, serif; line-height:30px;}
+    
+        #get-started-block {margin:0 0 37px 0;}
+            #line1 {margin:25px 25px 0 193px;}
+            #line2 {margin:25px 0 0 25px;}
+            #get-started-block .get-started {margin:0 0 0 0px; float:left;}
